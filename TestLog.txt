@@ -1,0 +1,483 @@
+[2025-04-21 15:24:50] ------ Starting RMI Server...
+Server exception: java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:356)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:251)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415)
+	at java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147)
+	at java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235)
+	at java.rmi/sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:223)
+	at java.rmi/sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:208)
+	at java.rmi/java.rmi.registry.LocateRegistry.createRegistry(LocateRegistry.java:203)
+	at com.example.RMIServer.main(RMIServer.java:13)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.Net.bind(Net.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:390)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:277)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:170)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createServerSocket(TCPDirectSocketFactory.java:45)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:672)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:344)
+	... 8 more
+[2025-04-21 15:24:55] RMI Server started (PID: 45059)
+[2025-04-21 15:24:55] \n=== Running Basic CRUD Tests ===
+[2025-04-21 15:24:55] ------ Test 1: List all employees
+[2025-04-21 15:24:55] [TEST1_LIST] Executing command
+[TEST1_LIST] 
+[TEST1_LIST] Employee Database System (RMI Version)
+[TEST1_LIST] =================================================================
+[TEST1_LIST] 1. Show All Employees
+[TEST1_LIST] 2. Find an employee by ID
+[TEST1_LIST] 3. Add a new employee
+[TEST1_LIST] 4. Delete an employee
+[TEST1_LIST] 5. Update an employee
+[TEST1_LIST] 6. Exit
+[TEST1_LIST] =================================================================
+[TEST1_LIST] Enter your choice:
+[TEST1_LIST] [32mE1 J. Doe Elect. Eng. [0m
+[TEST1_LIST] [32mE2 M. Smith Syst. Anal. [0m
+[TEST1_LIST] [32mE3 A. Lee Mech. Eng. [0m
+[TEST1_LIST] [32mE4 J. Miller Programmer [0m
+[TEST1_LIST] [32mE5 B. Casey Syst. Anal. [0m
+[TEST1_LIST] [32mE6 L. Chu Elect. Eng. [0m
+[TEST1_LIST] [32mE7 R. Davis Mech. Eng. [0m
+[TEST1_LIST] [32mE8 J. Jones Syst. Anal. [0m
+[TEST1_LIST] [32mE9 Hui. Lin. Eng. [0m
+[TEST1_LIST] [32mE123 Donald Trump President [0m
+[TEST1_LIST] [32mE007 James Bond Staff [0m
+[TEST1_LIST] 
+[TEST1_LIST] Employee Database System (RMI Version)
+[TEST1_LIST] =================================================================
+[TEST1_LIST] 1. Show All Employees
+[TEST1_LIST] 2. Find an employee by ID
+[TEST1_LIST] 3. Add a new employee
+[TEST1_LIST] 4. Delete an employee
+[TEST1_LIST] 5. Update an employee
+[TEST1_LIST] 6. Exit
+[TEST1_LIST] =================================================================
+[TEST1_LIST] Enter your choice:
+[2025-04-21 15:24:55] ------ Test 2: Add new employees
+[2025-04-21 15:24:55] [TEST2_ADD1] Executing command
+[TEST2_ADD1] 
+[TEST2_ADD1] Employee Database System (RMI Version)
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] 1. Show All Employees
+[TEST2_ADD1] 2. Find an employee by ID
+[TEST2_ADD1] 3. Add a new employee
+[TEST2_ADD1] 4. Delete an employee
+[TEST2_ADD1] 5. Update an employee
+[TEST2_ADD1] 6. Exit
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] Enter your choice:
+[TEST2_ADD1] Enter new employee No.:
+[TEST2_ADD1] [31mError: Employee with No. E123 already exists![0m
+[TEST2_ADD1] 
+[TEST2_ADD1] Employee Database System (RMI Version)
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] 1. Show All Employees
+[TEST2_ADD1] 2. Find an employee by ID
+[TEST2_ADD1] 3. Add a new employee
+[TEST2_ADD1] 4. Delete an employee
+[TEST2_ADD1] 5. Update an employee
+[TEST2_ADD1] 6. Exit
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] Enter your choice:
+[TEST2_ADD1] [*** Warning ***] Please enter a choice between 1 and 6
+[TEST2_ADD1] 
+[TEST2_ADD1] Employee Database System (RMI Version)
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] 1. Show All Employees
+[TEST2_ADD1] 2. Find an employee by ID
+[TEST2_ADD1] 3. Add a new employee
+[TEST2_ADD1] 4. Delete an employee
+[TEST2_ADD1] 5. Update an employee
+[TEST2_ADD1] 6. Exit
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] Enter your choice:
+[TEST2_ADD1] [*** Warning ***] Please enter a choice between 1 and 6
+[TEST2_ADD1] 
+[TEST2_ADD1] Employee Database System (RMI Version)
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] 1. Show All Employees
+[TEST2_ADD1] 2. Find an employee by ID
+[TEST2_ADD1] 3. Add a new employee
+[TEST2_ADD1] 4. Delete an employee
+[TEST2_ADD1] 5. Update an employee
+[TEST2_ADD1] 6. Exit
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] Enter your choice:
+[2025-04-21 15:24:56] [TEST2_ADD1] Executing command
+[TEST2_ADD1] 
+[TEST2_ADD1] Employee Database System (RMI Version)
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] 1. Show All Employees
+[TEST2_ADD1] 2. Find an employee by ID
+[TEST2_ADD1] 3. Add a new employee
+[TEST2_ADD1] 4. Delete an employee
+[TEST2_ADD1] 5. Update an employee
+[TEST2_ADD1] 6. Exit
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] Enter your choice:
+[TEST2_ADD1] Enter new employee No.:
+[TEST2_ADD1] Enter new employee name:
+[TEST2_ADD1] Enter new employee title:
+[TEST2_ADD1] [32mE124 Elon Musk Minister Added successfully[0m
+[TEST2_ADD1] 
+[TEST2_ADD1] Employee Database System (RMI Version)
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] 1. Show All Employees
+[TEST2_ADD1] 2. Find an employee by ID
+[TEST2_ADD1] 3. Add a new employee
+[TEST2_ADD1] 4. Delete an employee
+[TEST2_ADD1] 5. Update an employee
+[TEST2_ADD1] 6. Exit
+[TEST2_ADD1] =================================================================
+[TEST2_ADD1] Enter your choice:
+[2025-04-21 15:24:56] [TEST2_LIST] Executing command
+[TEST2_LIST] 
+[TEST2_LIST] Employee Database System (RMI Version)
+[TEST2_LIST] =================================================================
+[TEST2_LIST] 1. Show All Employees
+[TEST2_LIST] 2. Find an employee by ID
+[TEST2_LIST] 3. Add a new employee
+[TEST2_LIST] 4. Delete an employee
+[TEST2_LIST] 5. Update an employee
+[TEST2_LIST] 6. Exit
+[TEST2_LIST] =================================================================
+[TEST2_LIST] Enter your choice:
+[TEST2_LIST] [32mE1 J. Doe Elect. Eng. [0m
+[TEST2_LIST] [32mE2 M. Smith Syst. Anal. [0m
+[TEST2_LIST] [32mE3 A. Lee Mech. Eng. [0m
+[TEST2_LIST] [32mE4 J. Miller Programmer [0m
+[TEST2_LIST] [32mE5 B. Casey Syst. Anal. [0m
+[TEST2_LIST] [32mE6 L. Chu Elect. Eng. [0m
+[TEST2_LIST] [32mE7 R. Davis Mech. Eng. [0m
+[TEST2_LIST] [32mE8 J. Jones Syst. Anal. [0m
+[TEST2_LIST] [32mE9 Hui. Lin. Eng. [0m
+[TEST2_LIST] [32mE123 Donald Trump President [0m
+[TEST2_LIST] [32mE007 James Bond Staff [0m
+[TEST2_LIST] [32mE124 Elon Musk Minister [0m
+[TEST2_LIST] 
+[TEST2_LIST] Employee Database System (RMI Version)
+[TEST2_LIST] =================================================================
+[TEST2_LIST] 1. Show All Employees
+[TEST2_LIST] 2. Find an employee by ID
+[TEST2_LIST] 3. Add a new employee
+[TEST2_LIST] 4. Delete an employee
+[TEST2_LIST] 5. Update an employee
+[TEST2_LIST] 6. Exit
+[TEST2_LIST] =================================================================
+[TEST2_LIST] Enter your choice:
+[2025-04-21 15:24:56] ------ Test 3: Find employee
+[2025-04-21 15:24:56] [TEST3_FIND] Executing command
+[TEST3_FIND] 
+[TEST3_FIND] Employee Database System (RMI Version)
+[TEST3_FIND] =================================================================
+[TEST3_FIND] 1. Show All Employees
+[TEST3_FIND] 2. Find an employee by ID
+[TEST3_FIND] 3. Add a new employee
+[TEST3_FIND] 4. Delete an employee
+[TEST3_FIND] 5. Update an employee
+[TEST3_FIND] 6. Exit
+[TEST3_FIND] =================================================================
+[TEST3_FIND] Enter your choice:
+[TEST3_FIND] Enter employee No. to find:
+[TEST3_FIND] [32mE124 Elon Musk Minister [0m
+[TEST3_FIND] 
+[TEST3_FIND] Employee Database System (RMI Version)
+[TEST3_FIND] =================================================================
+[TEST3_FIND] 1. Show All Employees
+[TEST3_FIND] 2. Find an employee by ID
+[TEST3_FIND] 3. Add a new employee
+[TEST3_FIND] 4. Delete an employee
+[TEST3_FIND] 5. Update an employee
+[TEST3_FIND] 6. Exit
+[TEST3_FIND] =================================================================
+[TEST3_FIND] Enter your choice:
+[2025-04-21 15:24:56] ------ Test 4: Update employee
+[2025-04-21 15:24:56] [TEST4_UPDT] Executing command
+[TEST4_UPDT] 
+[TEST4_UPDT] Employee Database System (RMI Version)
+[TEST4_UPDT] =================================================================
+[TEST4_UPDT] 1. Show All Employees
+[TEST4_UPDT] 2. Find an employee by ID
+[TEST4_UPDT] 3. Add a new employee
+[TEST4_UPDT] 4. Delete an employee
+[TEST4_UPDT] 5. Update an employee
+[TEST4_UPDT] 6. Exit
+[TEST4_UPDT] =================================================================
+[TEST4_UPDT] Enter your choice:
+[TEST4_UPDT] Enter employee No. to update:
+[TEST4_UPDT] Enter new employee name:
+[TEST4_UPDT] Enter new employee title:
+[TEST4_UPDT] [32mE124 Elon Musk updated successfully[0m
+[TEST4_UPDT] 
+[TEST4_UPDT] Employee Database System (RMI Version)
+[TEST4_UPDT] =================================================================
+[TEST4_UPDT] 1. Show All Employees
+[TEST4_UPDT] 2. Find an employee by ID
+[TEST4_UPDT] 3. Add a new employee
+[TEST4_UPDT] 4. Delete an employee
+[TEST4_UPDT] 5. Update an employee
+[TEST4_UPDT] 6. Exit
+[TEST4_UPDT] =================================================================
+[TEST4_UPDT] Enter your choice:
+[2025-04-21 15:24:56] [TEST4_LIST] Executing command
+[TEST4_LIST] 
+[TEST4_LIST] Employee Database System (RMI Version)
+[TEST4_LIST] =================================================================
+[TEST4_LIST] 1. Show All Employees
+[TEST4_LIST] 2. Find an employee by ID
+[TEST4_LIST] 3. Add a new employee
+[TEST4_LIST] 4. Delete an employee
+[TEST4_LIST] 5. Update an employee
+[TEST4_LIST] 6. Exit
+[TEST4_LIST] =================================================================
+[TEST4_LIST] Enter your choice:
+[TEST4_LIST] Enter employee No. to find:
+[TEST4_LIST] [32mE124 Elon Musk Staff [0m
+[TEST4_LIST] 
+[TEST4_LIST] Employee Database System (RMI Version)
+[TEST4_LIST] =================================================================
+[TEST4_LIST] 1. Show All Employees
+[TEST4_LIST] 2. Find an employee by ID
+[TEST4_LIST] 3. Add a new employee
+[TEST4_LIST] 4. Delete an employee
+[TEST4_LIST] 5. Update an employee
+[TEST4_LIST] 6. Exit
+[TEST4_LIST] =================================================================
+[TEST4_LIST] Enter your choice:
+[2025-04-21 15:24:56] ------ Test 5: Delete employee
+[2025-04-21 15:24:56] [TEST5_DELT] Executing command
+[TEST5_DELT] 
+[TEST5_DELT] Employee Database System (RMI Version)
+[TEST5_DELT] =================================================================
+[TEST5_DELT] 1. Show All Employees
+[TEST5_DELT] 2. Find an employee by ID
+[TEST5_DELT] 3. Add a new employee
+[TEST5_DELT] 4. Delete an employee
+[TEST5_DELT] 5. Update an employee
+[TEST5_DELT] 6. Exit
+[TEST5_DELT] =================================================================
+[TEST5_DELT] Enter your choice:
+[TEST5_DELT] Enter employee No. to delete:
+[TEST5_DELT] [32mE124 deleted successfully[0m
+[TEST5_DELT] 
+[TEST5_DELT] Employee Database System (RMI Version)
+[TEST5_DELT] =================================================================
+[TEST5_DELT] 1. Show All Employees
+[TEST5_DELT] 2. Find an employee by ID
+[TEST5_DELT] 3. Add a new employee
+[TEST5_DELT] 4. Delete an employee
+[TEST5_DELT] 5. Update an employee
+[TEST5_DELT] 6. Exit
+[TEST5_DELT] =================================================================
+[TEST5_DELT] Enter your choice:
+[2025-04-21 15:24:57] [TEST5_LIST] Executing command
+[TEST5_LIST] 
+[TEST5_LIST] Employee Database System (RMI Version)
+[TEST5_LIST] =================================================================
+[TEST5_LIST] 1. Show All Employees
+[TEST5_LIST] 2. Find an employee by ID
+[TEST5_LIST] 3. Add a new employee
+[TEST5_LIST] 4. Delete an employee
+[TEST5_LIST] 5. Update an employee
+[TEST5_LIST] 6. Exit
+[TEST5_LIST] =================================================================
+[TEST5_LIST] Enter your choice:
+[TEST5_LIST] [32mE1 J. Doe Elect. Eng. [0m
+[TEST5_LIST] [32mE2 M. Smith Syst. Anal. [0m
+[TEST5_LIST] [32mE3 A. Lee Mech. Eng. [0m
+[TEST5_LIST] [32mE4 J. Miller Programmer [0m
+[TEST5_LIST] [32mE5 B. Casey Syst. Anal. [0m
+[TEST5_LIST] [32mE6 L. Chu Elect. Eng. [0m
+[TEST5_LIST] [32mE7 R. Davis Mech. Eng. [0m
+[TEST5_LIST] [32mE8 J. Jones Syst. Anal. [0m
+[TEST5_LIST] [32mE9 Hui. Lin. Eng. [0m
+[TEST5_LIST] [32mE123 Donald Trump President [0m
+[TEST5_LIST] [32mE007 James Bond Staff [0m
+[TEST5_LIST] 
+[TEST5_LIST] Employee Database System (RMI Version)
+[TEST5_LIST] =================================================================
+[TEST5_LIST] 1. Show All Employees
+[TEST5_LIST] 2. Find an employee by ID
+[TEST5_LIST] 3. Add a new employee
+[TEST5_LIST] 4. Delete an employee
+[TEST5_LIST] 5. Update an employee
+[TEST5_LIST] 6. Exit
+[TEST5_LIST] =================================================================
+[TEST5_LIST] Enter your choice:
+[2025-04-21 15:24:57] \n=== Running Concurrent Tests ===
+[2025-04-21 15:24:57] [CT1_PRESET] Executing command
+[CT1_PRESET] 
+[CT1_PRESET] Employee Database System (RMI Version)
+[CT1_PRESET] =================================================================
+[CT1_PRESET] 1. Show All Employees
+[CT1_PRESET] 2. Find an employee by ID
+[CT1_PRESET] 3. Add a new employee
+[CT1_PRESET] 4. Delete an employee
+[CT1_PRESET] 5. Update an employee
+[CT1_PRESET] 6. Exit
+[CT1_PRESET] =================================================================
+[CT1_PRESET] Enter your choice:
+[CT1_PRESET] Enter new employee No.:
+[CT1_PRESET] [31mError: Employee with No. E007 already exists![0m
+[CT1_PRESET] 
+[CT1_PRESET] Employee Database System (RMI Version)
+[CT1_PRESET] =================================================================
+[CT1_PRESET] 1. Show All Employees
+[CT1_PRESET] 2. Find an employee by ID
+[CT1_PRESET] 3. Add a new employee
+[CT1_PRESET] 4. Delete an employee
+[CT1_PRESET] 5. Update an employee
+[CT1_PRESET] 6. Exit
+[CT1_PRESET] =================================================================
+[CT1_PRESET] Enter your choice:
+[CT1_PRESET] [*** Warning ***] Please enter a choice between 1 and 6
+[CT1_PRESET] 
+[CT1_PRESET] Employee Database System (RMI Version)
+[CT1_PRESET] =================================================================
+[CT1_PRESET] 1. Show All Employees
+[CT1_PRESET] 2. Find an employee by ID
+[CT1_PRESET] 3. Add a new employee
+[CT1_PRESET] 4. Delete an employee
+[CT1_PRESET] 5. Update an employee
+[CT1_PRESET] 6. Exit
+[CT1_PRESET] =================================================================
+[CT1_PRESET] Enter your choice:
+[CT1_PRESET] [*** Warning ***] Please enter a choice between 1 and 6
+[CT1_PRESET] 
+[CT1_PRESET] Employee Database System (RMI Version)
+[CT1_PRESET] =================================================================
+[CT1_PRESET] 1. Show All Employees
+[CT1_PRESET] 2. Find an employee by ID
+[CT1_PRESET] 3. Add a new employee
+[CT1_PRESET] 4. Delete an employee
+[CT1_PRESET] 5. Update an employee
+[CT1_PRESET] 6. Exit
+[CT1_PRESET] =================================================================
+[CT1_PRESET] Enter your choice:
+[2025-04-21 15:24:57] [CT1_TX] Starting long transaction
+[2025-04-21 15:24:57] [CT1_UPD] Executing command
+[CT1_UPD] 
+[CT1_UPD] Employee Database System (RMI Version)
+[CT1_UPD] =================================================================
+[CT1_UPD] 1. Show All Employees
+[CT1_UPD] 2. Find an employee by ID
+[CT1_UPD] 3. Add a new employee
+[CT1_UPD] 4. Delete an employee
+[CT1_UPD] 5. Update an employee
+[CT1_UPD] 6. Exit
+[CT1_UPD] =================================================================
+[CT1_UPD] Enter your choice:
+[CT1_UPD] Enter employee No. to update:
+[CT1_UPD] Enter new employee name:
+[CT1_UPD] Enter new employee title:
+[CT1_UPD] [32mE007 Jason Bourne updated successfully[0m
+[CT1_UPD] 
+[CT1_UPD] Employee Database System (RMI Version)
+[CT1_UPD] =================================================================
+[CT1_UPD] 1. Show All Employees
+[CT1_UPD] 2. Find an employee by ID
+[CT1_UPD] 3. Add a new employee
+[CT1_UPD] 4. Delete an employee
+[CT1_UPD] 5. Update an employee
+[CT1_UPD] 6. Exit
+[CT1_UPD] =================================================================
+[CT1_UPD] Enter your choice:
+[2025-04-21 15:24:58] [CT2_READ] Attempting concurrent read
+[2025-04-21 15:24:58] [CT2_READ] Executing command
+[CT2_READ] 
+[CT2_READ] Employee Database System (RMI Version)
+[CT2_READ] =================================================================
+[CT2_READ] 1. Show All Employees
+[CT2_READ] 2. Find an employee by ID
+[CT2_READ] 3. Add a new employee
+[CT2_READ] 4. Delete an employee
+[CT2_READ] 5. Update an employee
+[CT2_READ] 6. Exit
+[CT2_READ] =================================================================
+[CT2_READ] Enter your choice:
+[CT2_READ] Enter employee No. to find:
+[CT2_READ] [32mE007 Jason Bourne Hitman [0m
+[CT2_READ] 
+[CT2_READ] Employee Database System (RMI Version)
+[CT2_READ] =================================================================
+[CT2_READ] 1. Show All Employees
+[CT2_READ] 2. Find an employee by ID
+[CT2_READ] 3. Add a new employee
+[CT2_READ] 4. Delete an employee
+[CT2_READ] 5. Update an employee
+[CT2_READ] 6. Exit
+[CT2_READ] =================================================================
+[CT2_READ] Enter your choice:
+[2025-04-21 15:24:59] [CT3_WRITE] Attempting concurrent write
+[2025-04-21 15:24:59] [CT3_WRITE] Executing command
+[CT3_WRITE] 
+[CT3_WRITE] Employee Database System (RMI Version)
+[CT3_WRITE] =================================================================
+[CT3_WRITE] 1. Show All Employees
+[CT3_WRITE] 2. Find an employee by ID
+[CT3_WRITE] 3. Add a new employee
+[CT3_WRITE] 4. Delete an employee
+[CT3_WRITE] 5. Update an employee
+[CT3_WRITE] 6. Exit
+[CT3_WRITE] =================================================================
+[CT3_WRITE] Enter your choice:
+[CT3_WRITE] Enter employee No. to update:
+[CT3_WRITE] Enter new employee name:
+[CT3_WRITE] Enter new employee title:
+[CT3_WRITE] [32mE007 James Bond updated successfully[0m
+[CT3_WRITE] 
+[CT3_WRITE] Employee Database System (RMI Version)
+[CT3_WRITE] =================================================================
+[CT3_WRITE] 1. Show All Employees
+[CT3_WRITE] 2. Find an employee by ID
+[CT3_WRITE] 3. Add a new employee
+[CT3_WRITE] 4. Delete an employee
+[CT3_WRITE] 5. Update an employee
+[CT3_WRITE] 6. Exit
+[CT3_WRITE] =================================================================
+[CT3_WRITE] Enter your choice:
+[2025-04-21 15:24:59] Concurrent tests completed
+[2025-04-21 15:24:59] \n=== Final Verification ===
+[2025-04-21 15:24:59] [FINAL_LIST] Executing command
+[FINAL_LIST] 
+[FINAL_LIST] Employee Database System (RMI Version)
+[FINAL_LIST] =================================================================
+[FINAL_LIST] 1. Show All Employees
+[FINAL_LIST] 2. Find an employee by ID
+[FINAL_LIST] 3. Add a new employee
+[FINAL_LIST] 4. Delete an employee
+[FINAL_LIST] 5. Update an employee
+[FINAL_LIST] 6. Exit
+[FINAL_LIST] =================================================================
+[FINAL_LIST] Enter your choice:
+[FINAL_LIST] [32mE1 J. Doe Elect. Eng. [0m
+[FINAL_LIST] [32mE2 M. Smith Syst. Anal. [0m
+[FINAL_LIST] [32mE3 A. Lee Mech. Eng. [0m
+[FINAL_LIST] [32mE4 J. Miller Programmer [0m
+[FINAL_LIST] [32mE5 B. Casey Syst. Anal. [0m
+[FINAL_LIST] [32mE6 L. Chu Elect. Eng. [0m
+[FINAL_LIST] [32mE7 R. Davis Mech. Eng. [0m
+[FINAL_LIST] [32mE8 J. Jones Syst. Anal. [0m
+[FINAL_LIST] [32mE9 Hui. Lin. Eng. [0m
+[FINAL_LIST] [32mE123 Donald Trump President [0m
+[FINAL_LIST] [32mE007 James Bond Staff [0m
+[FINAL_LIST] 
+[FINAL_LIST] Employee Database System (RMI Version)
+[FINAL_LIST] =================================================================
+[FINAL_LIST] 1. Show All Employees
+[FINAL_LIST] 2. Find an employee by ID
+[FINAL_LIST] 3. Add a new employee
+[FINAL_LIST] 4. Delete an employee
+[FINAL_LIST] 5. Update an employee
+[FINAL_LIST] 6. Exit
+[FINAL_LIST] =================================================================
+[FINAL_LIST] Enter your choice:
+[2025-04-21 15:24:59] \n=== All Tests Completed ===
